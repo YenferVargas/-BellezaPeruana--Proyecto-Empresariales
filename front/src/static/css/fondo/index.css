@@ -1,0 +1,46 @@
+.full-page-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: -100;
+}
+.full-page-container.black {
+  background: #212121;
+  color: #fff;
+}
+.full-page-container.white {
+  background: #ffffff;
+  color: #000;
+}
+
+.light-effect {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -99;
+}
+.light-effect svg {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 25vh;
+}
+.light-effect svg .wave-1 {
+  opacity: 0.5;
+}
+.light-effect svg .wave-2 {
+  opacity: 0.4;
+}
+.light-effect svg .wave-3 {
+  opacity: 0.3;
+}
+.light-effect svg .wave-4 {
+  opacity: 0.2;
+}/*# sourceMappingURL=index.css.map */

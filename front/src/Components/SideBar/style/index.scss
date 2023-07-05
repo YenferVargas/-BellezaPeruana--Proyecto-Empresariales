@@ -1,0 +1,122 @@
+nav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-shadow: -10px 0px 30px 0 #8883, -1px 0px 10px 0 #8883;
+    overflow: hidden {
+        y: scroll;
+    };
+    #sideBar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 {
+            left: 10px;
+            right: 10px;
+        }
+
+        flex-direction: column;
+        width: 100%;
+
+        .nav-label {
+            font-size: 12px;
+            margin-bottom: 0;
+            padding: 14px 14px 14px 10px;
+            color: #607d8b;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .list-nav {
+            margin-top: 10px;
+            width: 100%;
+            .list-selection {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+
+                .list-icon {
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                        fill: #607d8b;
+                    }
+                }
+
+                .list-text {
+                    color: var(--my-minor);
+                }
+                .list-arrow {
+                    color: var(--my-minor);
+                }
+            }
+
+            .list-container {
+                font-weight: 500;
+                b {
+                    font-weight: 800;
+                }
+                font-size: 0.9rem;
+                .redirect-item {
+                    color: var(--my-minor);
+                }
+                .my-text-success {
+                    color: var(--my-success);
+                }
+                .my-text-danger {
+                    color: var(--my-danger);
+                }
+                &:hover {
+                    color: var(--my-primary) !important;
+                }
+            }
+
+            .sub-menu-show {
+                animation: openShow 0.3s;
+                height: 100%;
+            }
+            .sub-menu-hide {
+                animation: openHide 0.3s;
+                height: 0%;
+            }
+            &:hover .list-selection, .selected {
+                .list-text {
+                    color: var(--my-primary);
+                }
+                .list-arrow {
+                    color: var(--my-primary);
+                }
+                .list-icon {
+                    svg {
+                        fill: var(--my-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes openShow {
+    from {
+        height: 0%;
+        overflow: hidden;
+    }
+    to {
+        height: 100%;
+        display: none;
+        overflow: hidden;
+    }
+}
+
+@keyframes openHide {
+    from {
+        height: 100%;
+        display: none;
+        overflow: hidden;
+    }
+    to {
+        height: 0%;
+        overflow: hidden;
+    }
+}

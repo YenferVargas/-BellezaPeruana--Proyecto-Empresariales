@@ -1,0 +1,21 @@
+.add-cantidad-modal-container {
+    .add-cantidad-modal {
+        .ele-data {
+            .ele-img {
+                width: 50%;
+                border-radius: 15px;
+            }
+            .ele-name {
+                color: var(--my-primary);
+            }
+            .ele-price {
+                color: var(--my-success);
+            }
+        }
+        .ele-amount {
+            .ele-desc {
+                color: var(--my-minor);
+            }
+        }
+    }
+}

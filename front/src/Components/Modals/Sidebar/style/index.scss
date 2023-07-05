@@ -1,0 +1,36 @@
+.modal-sidebar-container {
+    background: #0000 !important;
+    .sidebar-container-md {
+        background: #0004;
+        backdrop-filter: blur(8px);
+        width: 50%;
+        height: 100vh;
+        overflow: hidden {
+            y: auto;
+        };
+    }
+    &.show-modal {
+        animation: show-modal 0.5s ease-in-out forwards;
+        width: 100vw;
+    }
+    &.hide-modal {
+        animation: hide-modal 0.5s ease-in-out forwards;
+        width: 0;
+    }
+}
+@keyframes show-modal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+@keyframes hide-modal {
+    0% {
+        width: 100vw;
+    }
+    100% {
+        width: 0;
+    }
+}

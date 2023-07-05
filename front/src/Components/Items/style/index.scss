@@ -1,0 +1,75 @@
+.item-container {
+    // border: 1px blue solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 280px;
+    padding: 10px 5px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    &:hover {
+        .fondo {
+            filter: blur(5px);
+            .sombra {
+                background-color: #000a;
+            }
+        }
+    }
+
+    .fondo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(2px);
+        z-index: -1;
+        .sombra {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #0008;
+            z-index: -1;
+        }
+    }
+
+    .img-item-container {
+        width: 80%;
+        height: 50%;
+        border-radius: 10px;
+        .img-item {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+    h4 {
+        font-size: 10px;
+        margin-top: 5px;
+        .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .cost {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #0f0;
+        }
+    }
+    button {
+        margin-top: 5px;
+        width: 80%;
+        background-color: #00f;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 5px;
+        &:hover {
+            background-color: #009;
+            color: #fff;
+        }
+    }
+}

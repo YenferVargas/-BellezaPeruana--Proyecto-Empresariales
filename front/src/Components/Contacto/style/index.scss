@@ -1,0 +1,17 @@
+.contacto {
+    color: var(--my-minor);
+    .form-big-container, .form-small-container {
+        box-shadow: 0px 0px 10px -5px var(--my-minor);
+
+        .icon-data {
+            background: var(--my-pink-dark);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    }
+}

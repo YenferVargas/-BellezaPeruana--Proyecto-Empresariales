@@ -1,0 +1,106 @@
+nav {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-shadow: -10px 0px 30px 0 rgba(136, 136, 136, 0.2), -1px 0px 10px 0 rgba(136, 136, 136, 0.2);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+nav #sideBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+nav #sideBar .nav-label {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 14px 14px 14px 10px;
+  color: #607d8b;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+nav #sideBar .list-nav {
+  margin-top: 10px;
+  width: 100%;
+}
+nav #sideBar .list-nav .list-selection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav #sideBar .list-nav .list-selection .list-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: #607d8b;
+}
+nav #sideBar .list-nav .list-selection .list-text {
+  color: var(--my-minor);
+}
+nav #sideBar .list-nav .list-selection .list-arrow {
+  color: var(--my-minor);
+}
+nav #sideBar .list-nav .list-container {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+nav #sideBar .list-nav .list-container b {
+  font-weight: 800;
+}
+nav #sideBar .list-nav .list-container .redirect-item {
+  color: var(--my-minor);
+}
+nav #sideBar .list-nav .list-container .my-text-success {
+  color: var(--my-success);
+}
+nav #sideBar .list-nav .list-container .my-text-danger {
+  color: var(--my-danger);
+}
+nav #sideBar .list-nav .list-container:hover {
+  color: var(--my-primary) !important;
+}
+nav #sideBar .list-nav .sub-menu-show {
+  animation: openShow 0.3s;
+  height: 100%;
+}
+nav #sideBar .list-nav .sub-menu-hide {
+  animation: openHide 0.3s;
+  height: 0%;
+}
+nav #sideBar .list-nav:hover .list-selection .list-text, nav #sideBar .list-nav .selected .list-text {
+  color: var(--my-primary);
+}
+nav #sideBar .list-nav:hover .list-selection .list-arrow, nav #sideBar .list-nav .selected .list-arrow {
+  color: var(--my-primary);
+}
+nav #sideBar .list-nav:hover .list-selection .list-icon svg, nav #sideBar .list-nav .selected .list-icon svg {
+  fill: var(--my-primary);
+}
+
+@keyframes openShow {
+  from {
+    height: 0%;
+    overflow: hidden;
+  }
+  to {
+    height: 100%;
+    display: none;
+    overflow: hidden;
+  }
+}
+@keyframes openHide {
+  from {
+    height: 100%;
+    display: none;
+    overflow: hidden;
+  }
+  to {
+    height: 0%;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=index.css.map */

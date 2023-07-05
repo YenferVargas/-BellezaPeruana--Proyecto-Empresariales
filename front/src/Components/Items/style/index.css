@@ -1,0 +1,71 @@
+.item-container {
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  padding: 10px 5px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.item-container:hover .fondo {
+  filter: blur(5px);
+}
+.item-container:hover .fondo .sombra {
+  background-color: rgba(0, 0, 0, 0.6666666667);
+}
+.item-container .fondo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+.item-container .fondo .sombra {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  z-index: -1;
+}
+.item-container .img-item-container {
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+}
+.item-container .img-item-container .img-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.item-container h4 {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.item-container h4 .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.item-container h4 .cost {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f0;
+}
+.item-container button {
+  margin-top: 5px;
+  width: 80%;
+  background-color: #00f;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.item-container button:hover {
+  background-color: #009;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

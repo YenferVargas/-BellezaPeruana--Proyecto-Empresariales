@@ -1,0 +1,37 @@
+.modal-sidebar-container {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.modal-sidebar-container .sidebar-container-md {
+  background: rgba(0, 0, 0, 0.2666666667);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.modal-sidebar-container.show-modal {
+  animation: show-modal 0.5s ease-in-out forwards;
+  width: 100vw;
+}
+.modal-sidebar-container.hide-modal {
+  animation: hide-modal 0.5s ease-in-out forwards;
+  width: 0;
+}
+
+@keyframes show-modal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+@keyframes hide-modal {
+  0% {
+    width: 100vw;
+  }
+  100% {
+    width: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

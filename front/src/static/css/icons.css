@@ -1,0 +1,87 @@
+.sun-primary{
+    fill: var(--my-secondary);
+}
+.sun-secondary{
+    fill: var(--my-yellow);
+}
+
+.moon-primary{
+    fill: var(--my-secondary);
+}
+.moon-secondary{
+    fill: var(--my-yellow);
+}
+
+.bars-primary {
+    fill: var(--my-minor);
+}
+.bars-secondary {
+    fill: var(--my-primary);
+}
+
+.user-alien-primary, .alien-8-bits-primary {
+    fill: #000;
+}
+.user-alien-secondary, .alien-8-bits-secondary {
+    fill: #090;
+}
+
+.door-open-primary {
+    fill: var(--my-minor);
+}
+.door-open-secondary {
+    fill: #bd4d03;
+}
+
+.cart-shopping-primary {
+    fill: var(--my-minor);
+}
+.cart-shopping-secondary {
+    fill: #bd4d03;
+}
+
+.circle-plus-primary {
+    fill: var(--my-minor);
+}
+.circle-plus-secondary {
+    fill: var(--my-success);
+}
+
+.circle-minus-primary {
+    fill: var(--my-minor);
+}
+.circle-minus-secondary {
+    fill: var(--my-danger);
+}
+
+.user-secret-primary {
+    fill: #090;
+}
+.user-secret-secondary {
+    fill: #000;
+}
+
+.user-primary {
+    fill: var(--my-minor);
+}
+.user-secondary {
+    fill: #888;
+}
+
+.calendar-days-primary {
+    fill: var(--my-minor);
+}
+.calendar-days-secondary {
+    fill: #888;
+}
+
+.comments-primary {
+    fill: var(--my-minor);
+}
+.comments-secondary {
+    fill: #888;
+}
+
+.quote-left-primary {
+    fill: var(--my-minor);
+}
